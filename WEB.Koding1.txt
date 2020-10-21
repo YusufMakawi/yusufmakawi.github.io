@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cv s. muh. yusuf makawi</title>
+    </head>
+    <body bgcolor="lightblue" text="black"></body>
+   <center><h1>curriculum viate</h1></center>
+    <hr>
+    <center><img src="https://cdn.discordapp.com/attachments/740652386229420264/767039769535840287/IMG-20190909-WA0015.jpg" width="150px" height="200px"></center>
+    <b>BIODATA</b>
+    <ol type="1">
+    <li>Nama:S. Muh. Yusuf Makawi</li>
+    <li>Agama :islam</li>
+    <li>kelamin: laki-laki</li>
+    <li>tempat/tanggal lahir :MASAMBA, 10 APRIL 2003</li>
+    <li>alamat: perumahan agung permai no.11 rt10/rw04</li>
+    </ol>
+    <b>PENDIDIKAN</b>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Nomor</td><td>Jenjang Pendidikan</td><td>sekolah</td><td>Masa pendidikan</td>
+            </tr>
+            <tr>
+                <td>01.</td><td>SDN</td><td>SDN 089 MASAMBA</td><td>2006-2012</td>
+            </tr>
+            <tr>
+                <td>02.</td><td>SMP</td><td>SMPN 1 MASAMBA</td><td>2013-2016</td>
+            </tr>
+            <tr>
+                <td>03.</td><td>SMA</td><td>SMAN 1 LUWU UTARA</td><td>2017-2020</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <tr></tr>
+    <table border="1">
+        <tbody>
+            <tr>
+                <center>informasi umum</center>
+            </tr>
+            <tr>
+                <td>nomor telefon</td><td>:</td><td>082398977157</td>
+            </tr>
+            <tr>
+                <td>E-MAIL</td><td>:</td><td>yusufmakawimonk@gmail.com</td>
+            </tr>
+            <tr>
+                <td>HOBI</td><td>:</td><td>main game,ngemil,nonton youtube</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    </body>
+</html>
