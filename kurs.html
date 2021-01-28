@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			color: #3d3d3d;
+			min-height: 90vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			background-color:  #7d5fff;
+			padding: 1em;
+			max-width: 500px;
+			width: 100%;
+			border-radius: 1em;
+		}
+
+		input, select, button {
+			margin: 1em;
+			padding: 1em;
+			border-radius: 1em;
+			outline: none;
+			border: 1px solid #3d3d3d;
+			color: #7d5fff;
+		}
+
+		.result {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Kurs Mata Uang</h2>
+	<div class="container">
+		<input type="number" class="input" placeholder="Masukan Jumlah">
+		<select class="kurs">
+			<option value="usd">USD - 14.161</option>
+			<option value="eur">EUR - 16.864</option>
+			<option value="sgd">SGD - 10.554</option>
+			<option value="myr">MYR - 3.549</option>
+			<option value="yen">YEN - 135</option>
+			<option value="sr"> SR  - 3.785</option>
+		</select>
+		<button class="hitung">Hitung</button>
+		<h2 class="result">Hasil: </h2>
+	</div>
+
+	<script>
+		const input = document.querySelector(".input");
+		const kurs = document.querySelector(".kurs");
+		const btnHitung = document.querySelector(".hitung");
+		const result = document.querySelector(".result");
+
+		btnHitung.addEventListener("click", function() {
+			if (kurs.value == "usd") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 14.161;
+			}
+
+			else if (kurs.value == "eur") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 10.554;
+			}
+
+			else if (kurs.value == "sgd") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 10.554;
+			}
+
+			else if (kurs.value == "myr") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 3.549;
+			}
+
+			else if (kurs.value == "yen") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 135;
+			}
+
+			else if (kurs.value == "sr") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 3.785;
+			}
+		})
+	</script>
+</body>
+</html>

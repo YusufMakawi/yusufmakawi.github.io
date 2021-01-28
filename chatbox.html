@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat Box</title>
+    <style>
+        body {
+            background-color: #7d5fff;
+            color:#3d3d3d;
+        }
+        h1{
+            text-align: center;
+        }
+        .result-chat {
+        text-align:left;
+        margin:0 auto;
+        margin-bottom:25px;
+        padding:10px;
+        background:#fff;
+        height:270px;
+        width:430px;
+        border:2px solid #3d3d3d;
+        overflow:auto; 
+        color: #7d5fff;
+        }
+        .input-chat {
+        width:390px;
+        border:2px solid #3d3d3d;
+        color: #7d5fff;
+        }
+      
+        .btn-chat{ width: 60px;
+        border:2px solid #3d3d3d;
+        color: #7d5fff;
+        }
+        #input{
+            text-align: center;
+        }
+      
+    </style>
+    </head>
+    <body>
+        <main>
+            <h1>Chat Box</h1>
+            <div class="result-chat">
+            </div>
+            <div id="input">
+                <input type="text" class="input-chat">
+                <button class="btn-chat">Send</button>
+            </div>
+        </main>
+        <script>
+            let resultChat = document.querySelector(".result-chat");
+            const inputChat = document.querySelector(".input-chat");
+            const btnChat = document.querySelector(".btn-chat");
+
+            btnChat.addEventListener("click", function() {
+                resultChat.innerHTML = resultChat.innerHTML + "<br>" + "Pesan: " + inputChat.value;
+                inputChat.value = "";
+            })
+        </script>
+    </body>
+</html>
