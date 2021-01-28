@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pendaftaran mahasiswa</title>
+    <style>
+        #card {
+        height: 740px;
+        width: 800px;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+    <form action="" method="POST">
+        <header style="color: mediumturquoise; font-family: sans-serif;">
+            <h1>formulir pendaftaran pendidikan</h1>
+        </header>
+        <br><br>
+        <table align="right">
+            <tr>
+                <td>tanggal</td>
+                <td><input type="date" name="date" value="" required></td>
+            </tr>
+        </table>
+        <br><br>
+        <h2 style="font-family: sans-serif;">INFORMASI PRIBADI</h2>
+        <table>
+            <tr>
+                <td>NAMA</td>
+                <td><input type="text" name="name" value="" style="width: 665px;" required></td>
+            </tr>
+            <tr>
+                <td>TANGGAL LAHIR</td>
+                <td><input type="date" name="birth" value="" style="width: 665px;" required></td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">INFORMASI KONTAK</h2>
+        <table>
+            <tr>
+                <td>ALAMAT</td>
+                <td><input type="text" name="address" value="" style="width: 380px;"required></td>
+            </tr>
+            <tr>
+                <td>KOTA</td>
+                <td><input type="text" name="city" value="" required></td>
+                <td>PROVINSI</td>
+                <td><input type="text" name="state" value="" required></td>
+            </tr>
+            <tr>
+                <td>KODE POS</td>
+                <td><input type="number" name="zipcode" value=""></td>
+                <td>NEGARA</td>
+                <td><input type="text" name="country" value="" required></td>
+            </tr>
+            <tr>
+                <td>NOMOR TELEFON</td>
+                <td><input type="tel" name="phone" value="" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+                <td>EMAIL</td>
+                <td><input type="email" name="email" value="" required></td>
+            </tr>
+            <tr>
+                <td>Membership</td>
+                <td>
+                    <input type="radio" name="member" value="regular" required>Regular
+                    <input type="radio" name="member" value="premium" required>Premium
+                    <input type="radio" name="member" value="vip" required>VIP
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">DITAIL KURSUS</h2>
+        <table>
+            <tr>
+                <td>NAMA LENGKAP</td>
+                <td><input type="text" name="course" value="" required></td>
+            </tr>
+            <tr>
+                <td>DETAIL PEMBAYARAN</td>
+                <td>
+                    <input type="radio" name="payment" value="cash" required>Cash
+                    <input type="radio" name="payment" value="cheque" required>Cheque
+                    <input type="radio" name="payment" value="credit" required>Credits
+                </td>
+            </tr>
+            <tr>
+                <td>KOMENTAR</td>
+                <td><input type="text" name="comments" value="" style="width: 665px;"></td>
+            </tr>
+        </table>
+        <br>
+        <footer>
+            <nav>
+               <table>
+         <tr>
+            <td><textarea name="" id="" cols="35" rows="5" placeholder="STUDENT SIGNATURE"></textarea></td>
+            <td><textarea name="" id="" cols="35" rows="5" placeholder="VALIDATE"></textarea></td>
+         </tr>
+         </table>
+            </nav>
+        </footer>
+    </form>
+    </div>
+</body>
+</html>
